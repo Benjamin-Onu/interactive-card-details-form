@@ -1,0 +1,258 @@
+
+
+/* Heading (XL) */
+#card-num p{
+    color: var(--white, #FFF);
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.422px;
+}
+#cardholder-name p{
+    color: var(--white, #FFF);
+    /* Body (L) */
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.exp-date p{
+    color: var(--white, #FFF);
+    text-align: right;
+    /* Body (L) */
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#white-box{
+    background: var(--white, #FFF);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#column1{
+    background: #21092F;
+    width: 483px;
+    height: 900px;
+}
+
+
+#card{
+    border-radius: 10px;
+    background: linear-gradient(164deg, #6348FE 0%, #610595 100%);
+    width: 447px;
+    height: 245px;
+    padding: 1em;
+    position: absolute;
+    bottom: 23em;
+    left: 4em;
+}
+
+#back-card{
+    width: 447px;
+    height: 245px;
+    border-radius: 10px;
+    background: linear-gradient(169deg, #FFF 0%, #D2D3D9 100%);
+    padding: 1em 0 1em 0;
+    position: absolute;
+    bottom: 4em;
+    left: 12em;
+}
+#back-card #box-1{
+    width: 447px;
+    height: 54px;
+    background: #2F2F2F;
+}
+#back-card #box-2{
+    width: 361px;
+    height: 38px;
+    border-radius: 4px;
+    background: rgba(173, 181, 190, 1);
+    margin: 0 1em 0 1em;
+}
+#back-card #box-2 p{
+    color: var(--white, #FFF);
+    text-align: right;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#card-sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-sign-up form label{
+    color: var(--deep-violet, #21092F);
+    font-size: 12px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.input{
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid var(--Gradient, #6348FE);
+    background: var(--White, #FFF);
+}
+
+#card-name, #card-number{
+    width: 381px;
+}
+#expired-month, #expired-year, #cvc-field{
+    width: 80px;
+    bottom: 1em;
+    position: relative;
+    margin: auto;
+}
+/* #expired-year {
+    right: 2em;
+    position: relative;
+} */
+#cvc{
+   width: 191px; 
+}
+#cvc-field {
+   display: inline-block;
+}
+form input{
+    margin: 1em 0;
+}
+.error{
+    color: rgba(255, 80, 80, 1);
+}
+input[value]{
+    opacity: 0.25;
+    color: var(--deep-violet, #21092F);
+    font-size: 18px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    
+}
+/* input{
+    position: relative;
+    left: 10em;
+} */
+/* #expired-month + span{
+    right: 4em;
+    bottom: 9px;
+}
+#expired-year + span{
+    right: 5em;
+    bottom: 9px;
+}
+#cvc + span{
+    right: 10em;
+} */
+
+#card-sign-up button, #sign-up-success button{
+    width: 381px;
+    border-radius: 8px;
+    background: var(--deep-violet, #21092F);
+}
+#card-sign-up button a, #sign-up-success button a{
+    text-decoration: none;
+    color: white;
+}
+
+#sign-up-success svg{
+    margin: 0 0 0 10em;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+#sign-up-success p, #sign-up-success h3{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#sign-up-success h3{
+    display: flex;
+    width: 381px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--deep-violet, #21092F);
+    /* Heading (XL) */
+    font-size: 28px;
+    letter-spacing: 3.422px;
+    text-align: center;
+}
+#sign-up-success p{
+    color: var(--purplish-grey, #8F8694);
+    /* Heading (L) */
+    font-size: 18px;
+    padding-left: 5em;
+}
+
+
+@media only screen and (max-width: 576px){
+    #white-box{
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+    }
+    #card{}
+    #back-card{}
+}
+
+/* @media only screen and (min-width: 576px) and (max-width: 768px) {} */
+#card{
+    border-radius: 10px;
+    background: linear-gradient(164deg, #6348FE 0%, #610595 100%);
+    width: 447px;
+    height: 245px;
+    padding: 1em;
+    position: absolute;
+    bottom: 23em;
+    left: 4em;
+}
+
+#back-card{
+    width: 447px;
+    height: 245px;
+    border-radius: 10px;
+    background: linear-gradient(169deg, #FFF 0%, #D2D3D9 100%);
+    padding: 1em 0 1em 0;
+    position: absolute;
+    bottom: 4em;
+    left: 12em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

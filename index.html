@@ -7,16 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
 
-  0000 0000 0000 0000
+  <!-- 0000 0000 0000 0000
   Jane Appleseed
   00/00
 
@@ -35,17 +31,81 @@
   CVC
   e.g. 123
 
-  Confirm
+  Confirm -->
 
   <!-- Completed state start -->
 
-  Thank you!
+  <!-- Thank you!
   We've added your card details
-  Continue
-  
+  Continue -->
+  <div id="white-box">
+    <div id="column1"></div>
+    <div>
+      <div id="card-sign-up">
+        <form>
+          <label for="card-name">cardholder name</label><br>
+          <input type="text" id="card-name" class="input" value="e.g.Jane Appleseed"><br>
+          <label for="card-number">card number</label><br>
+          <input type="text" id="card-number" class="input" value="e.g. 1234 5678 9123 0000">
+          <!-- <p class="error">Wrong format, numbers only</p> -->
+          <br>
+          
+          <label for="expired">exp. date (mm/yy)</label><br>
+          <input type="text" id="expired-month" class="input" value="MM">
+          <!-- <p class="error">Can't be blank</p> -->
+          <input type="text" id="expired-year" class="input" value="YY">
+          <!-- <p class="error">Can't be blank</p> -->
+          <div id="cvc-field">
+            <label for="cvc">cvc</label><br>
+            <input type="text" id="cvc" class="input" value="e.g. 123"><br>
+          </div><br>
+          <button class="input" id="confirm-card"><a href="#">Confirm</a></button>
+        </form>
+      </div>
+      <div id="sign-up-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <circle cx="40" cy="40" r="40" fill="url(#paint0_linear_0_318)"/>
+          <path d="M28 39.9199L36.0801 48L52.0801 32" stroke="white" stroke-width="3"/>
+          <defs>
+            <linearGradient id="paint0_linear_0_318" x1="-23.0143" y1="11.5071" x2="1.03143e-06" y2="91.5071" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#6348FE"/>
+              <stop offset="1" stop-color="#610595"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <h3>THANK YOU!</h3>
+        <p>We've added your card details</p>
+        <button class="input"><a href="">Continue</a></button>
+      </div>
+    </div>
+    </div>
+  <div id="card">
+    <div class="topBox">
+      <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+    </div>
+    <div id="card-num">
+      <p>0000 0000 0000 0000</p>
+    </div>
+    <div>
+      <div id="cardholder-name">
+        <p>JANE APPLESEED</p>
+      </div>
+      <div class="exp-date">
+        <p><span id="month">00</span>/<span id="year">00</span></p>
+      </div>
+    </div>
+  </div>
+  <div id="back-card">
+    <div id="box-1"></div>
+    <div id="box-2">
+      <p>000</p>
+    </div>
+  </div>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="card.js"></script>
 </body>
 </html>
